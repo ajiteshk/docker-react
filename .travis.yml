@@ -4,7 +4,7 @@ services:
 
 
 before_install:
-    - docker build -t ajiteshh/docker-react -f Dockerfile.dev .
+    - docker build -t ajiteshh/docker-react .
 
 deploy:
     provider: elasticbeanstalk
