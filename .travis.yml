@@ -6,9 +6,6 @@ services:
 before_install:
     - docker build -t ajiteshh/docker-react -f Dockerfile.dev .
 
-# script:
-#     - docker run -e CI=true ajiteshh/docker-react npm run test -- --coverage
-
 deploy:
     provider: elasticbeanstalk
     region: "ap-south-1"
